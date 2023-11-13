@@ -17,7 +17,7 @@ export default class Game {
 
     startGame () {
         if (this.players.length < 2) {
-            this.eventManager.notify('userInteraction', 'You need 2 player to play game')
+            throw new Error('You need 2 players')
         }
         this.status = 'STARTED'
         this.ui.showScreen(this.status)

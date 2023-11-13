@@ -36,15 +36,6 @@ npm run start
 
 The game will be available at http://localhost:1234 (or a similar local URL shown in your terminal).
 
-####  Building for Production
-To build the application for production, run:
-
-```bash
-npm run build
-```
-This will generate the dist folder, which you can deploy to your production server.
-
-
 ### To do
 - [ ] Allow user to build houses and hotels 
 - [ ] Update design

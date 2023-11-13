@@ -46,16 +46,17 @@ function registerEventListeners () {
     injector.get('dom').getElement('#endGame').addEventListener('click', () => {
         endGame()
     })
-    injector.get('dom').addEventListener(document, 'DOMContentLoaded', () => {
+    injector.get('dom').addEventListenerToElement(document, 'DOMContentLoaded', () => {
         injector.get('ui').showScreen(game.status)
     })
 
-    injector.get('dom').getElement('dice').addEventListener('click', injector.get('ui').animateRollDice.bind(injector.get('ui'), game.afterRoll, game.dice))
-    injector.get('dom').addEventListener(document, 'movementComplete', function () {
+    injector.get('dom').getElement('#dice').addEventListener('click', injector.get('ui').animateRollDice.bind(injector.get('ui'), game.afterRoll.bind(game), game.dice))
+
+    injector.get('dom').addEventListenerToElement(document, 'movementComplete', function () {
         injector.get('dom').getElement('#dice').disabled = false
     })
 
-    injector.get('dom').getElement('playerForm').addEventListener('submit', function (event) {
+    injector.get('dom').getElement('#playerForm').addEventListener('submit', function (event) {
         event.preventDefault()
 
         const playerNameEl = injector.get('dom').getElement('#playerName')
