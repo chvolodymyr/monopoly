@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Monopoly</title>
+    <link rel="stylesheet" href="./normalize.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+<div id="welcomeScreen">
+
+    <include src="partials/welcome.html"></include>
+</div>
+
+<div id="gameScreen">
+    <button id="endGame">End Game</button>
+    <div class="game-container">
+        <div class="player-container">
+        </div>
+        <div class="board" id="board">
+            <div class="dice-container">
+                <button id="dice" class="dice-button">Dice</button>
+                <div class="dice-elements">
+                    <div class="dice" id="dice1"></div>
+                    <div class="dice" id="dice2"></div>
+                </div>
+            </div>
+            <div class="center"></div>
+        </div>
+    </div>
+</div>
+<include src="partials/modal.html"></include>
+
+</body>
+
+
+<script type="module" src="index.js"></script>
+</html>
