@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "run": "parcel src/index.html",
-    "build": "parcel build",
+    "build": "parcel build src/index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
