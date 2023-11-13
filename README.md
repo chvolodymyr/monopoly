@@ -1,7 +1,7 @@
 # Monopoly game on js
 
 ## You could play here
-
+https://chvolodymyr.github.io/monopoly/
 ## Key Features
 
 - **Pure JavaScript and HTML**: The game logic is implemented entirely in JavaScript.
